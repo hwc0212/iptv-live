@@ -1,0 +1,366 @@
+{
+  "checked_at": "2026-11-15T15:52:15+08:00",
+  "scope": "HLS manifest plus bounded media-segment request; not proof of all-device or long-term availability",
+  "on_device_confirmed": [
+    "CGTN 英语",
+    "广州综合"
+  ],
+  "on_device_software_checked": [
+    "赤峰新闻综合",
+    "广州综合",
+    "哈尔滨新闻综合"
+  ],
+  "cctv1_cctv13_device_validation": "pending",
+  "channels": 29,
+  "stream_urls": 38,
+  "sources": [
+    {
+      "channel": "CCTV-1 综合",
+      "url": "http://74.91.26.218:82/live/cctv1hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.11
+    },
+    {
+      "channel": "CCTV-1 综合",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv1hd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 4.016
+    },
+    {
+      "channel": "CCTV-1 综合",
+      "url": "http://204.12.221.218:8181/3m1080p/cctv1.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.078
+    },
+    {
+      "channel": "CCTV-1 综合",
+      "url": "http://198.204.228.26/live/cctv1hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.062
+    },
+    {
+      "channel": "CCTV-13 新闻",
+      "url": "http://74.91.26.218:82/live/cctv13hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.125
+    },
+    {
+      "channel": "CCTV-13 新闻",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv13hd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.969
+    },
+    {
+      "channel": "CCTV-13 新闻",
+      "url": "http://120.76.248.139/live/bfgd/4200000067.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.375
+    },
+    {
+      "channel": "CCTV-13 新闻",
+      "url": "https://10.fast.hidns.vip/163189/cctv13/",
+      "origin": "DataShare-duo/IPTV-Source",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 2.703
+    },
+    {
+      "channel": "CCTV-2 财经",
+      "url": "http://74.91.26.218:82/live/cctv2hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.078
+    },
+    {
+      "channel": "CCTV-3 综艺",
+      "url": "http://74.91.26.218:82/live/cctv3hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.14
+    },
+    {
+      "channel": "CCTV-4 中文国际",
+      "url": "http://74.91.26.218:82/live/cctv4hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.125
+    },
+    {
+      "channel": "CCTV-6 电影",
+      "url": "http://198.204.240.250:82/live/cctv6.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 4.047
+    },
+    {
+      "channel": "CCTV-6 电影",
+      "url": "http://69.30.245.50/live/cctv6.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.516
+    },
+    {
+      "channel": "CCTV-7 国防军事",
+      "url": "http://74.91.26.218:82/live/cctv7hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.484
+    },
+    {
+      "channel": "CCTV-8 电视剧",
+      "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.343
+    },
+    {
+      "channel": "CCTV-9 纪录",
+      "url": "https://xykt-fix.github.io/Y77.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 200,
+      "media_format": "mpegts",
+      "seconds": 1.703
+    },
+    {
+      "channel": "CCTV-10 科教",
+      "url": "http://74.91.26.218:82/live/cctv10hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.219
+    },
+    {
+      "channel": "CCTV-10 科教",
+      "url": "https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.125
+    },
+    {
+      "channel": "CCTV-11 戏曲",
+      "url": "http://74.91.26.218:82/live/cctv11hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.079
+    },
+    {
+      "channel": "CCTV-12 社会与法",
+      "url": "http://74.91.26.218:82/live/cctv12hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.14
+    },
+    {
+      "channel": "CCTV-14 少儿",
+      "url": "http://74.91.26.218:82/live/cctv14hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.078
+    },
+    {
+      "channel": "CCTV-15 音乐",
+      "url": "http://74.91.26.218:82/live/cctv15hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.062
+    },
+    {
+      "channel": "CCTV-17 农业农村",
+      "url": "http://74.91.26.218:82/live/cctv17hd.m3u8",
+      "origin": "Kinghuchao/tvbox-live",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 3.109
+    },
+    {
+      "channel": "CGTN 英语",
+      "url": "https://english-livebkali.cgtn.com/live/encgtn.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.563
+    },
+    {
+      "channel": "赤峰新闻综合",
+      "url": "http://play1-qk.nmtv.cn/live/1735546697341033.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 200,
+      "media_format": "mpegts",
+      "seconds": 0.657
+    },
+    {
+      "channel": "广州综合",
+      "url": "https://tencentplaybusiness.gztv.com/live/zonghes.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 200,
+      "media_format": "mpegts",
+      "seconds": 0.641
+    },
+    {
+      "channel": "哈尔滨新闻综合",
+      "url": "https://stream.hrbtv.net/xwzh/playlist.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.844
+    },
+    {
+      "channel": "哈尔滨影视",
+      "url": "https://stream.hrbtv.net/yspd/playlist.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.89
+    },
+    {
+      "channel": "内蒙古卫视",
+      "url": "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 200,
+      "media_format": "mpegts",
+      "seconds": 0.25
+    },
+    {
+      "channel": "内蒙古蒙语卫视",
+      "url": "http://play1-qk.nmtv.cn/live/1769652109096027.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 200,
+      "media_format": "mpegts",
+      "seconds": 0.328
+    },
+    {
+      "channel": "浙江国际",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.328
+    },
+    {
+      "channel": "之江纪录",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.296
+    },
+    {
+      "channel": "浙江国际",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.171
+    },
+    {
+      "channel": "浙江教科",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.203
+    },
+    {
+      "channel": "浙江新闻",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.157
+    },
+    {
+      "channel": "浙江民生",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.219
+    },
+    {
+      "channel": "浙江经济",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.157
+    },
+    {
+      "channel": "浙江钱江",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8",
+      "origin": "iptv-org/iptv",
+      "hls_status": 200,
+      "segment_status": 206,
+      "media_format": "mpegts",
+      "seconds": 0.172
+    }
+  ],
+  "excluded": [
+    {
+      "channel": "CCTV-8",
+      "reason": "URL names CCTV8K, inconsistent channel identity"
+    }
+  ]
+}
