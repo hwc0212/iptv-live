@@ -1,0 +1,84 @@
+{
+  "checked_at": "2026-11-15T18:31:29+08:00",
+  "upstream_apk_sha256": "8b0ce76034bd715cc04dfcac5e99047dbaaaee225678dd6f5ccffe4b7fda9049",
+  "upstream_signer_sha256": "ecd96fb6c3d7f47720575672960d84280d7a682997871663dce7970071d85701",
+  "upstream_source_commit": "5be704224a2a102437811141d1ff6ec32a1dfd95",
+  "upstream_apk_vcs_commit": "ab52c89e7fa1ed9e201f1868a846dc1b6bbe6e81",
+  "application_id": "com.hwc0212.lemoniptv",
+  "version_name": "1.1.11-hwc.1",
+  "version_code": 11101,
+  "apk_sha256": "0d5aff85c7cb78b357631075b29666ca116ca967c8ff6d5146db58904c02fc16",
+  "signer_sha256": "5aa1914d628b604e1953ced3ac115493b1b206c0d48aa141b0066fbcf0b7e644",
+  "default_source": "https://raw.githubusercontent.com/hwc0212/iptv-live/main/channels.m3u",
+  "compiled_checks": {
+    "sets_global_ssl_factory": false,
+    "sets_global_hostname_verifier": false,
+    "runtime_exec": false,
+    "process_builder_start": false,
+    "dex_class_loader": false,
+    "apk_upload_route": false,
+    "management_settings_route": false,
+    "package_installer_mime": false,
+    "analytics_sdk_markers": [],
+    "custom_default_source": true
+  },
+  "build_and_release_lint": "passed",
+  "lint_errors": 0,
+  "lint_warnings": 57,
+  "osv_runtime_packages_checked": 79,
+  "osv_runtime_findings": [],
+  "fixed_advisories": [
+    {
+      "id": "CVE-2026-102554",
+      "package": "com.google.guava:guava",
+      "selected_version": "33.7.2-android"
+    }
+  ],
+  "device_test": {
+    "system": "Android 9 / API28 / armeabi-v7a",
+    "parsed_groups": 4,
+    "parsed_channels": 96,
+    "management_port_10481": "closed with original stopped and custom running",
+    "app_restart_retains_96_channels": true,
+    "http_channel_after_restart": {
+      "name": "CCTV-13 新闻",
+      "reported_resolution": "1280x720",
+      "active_audio_track": true
+    },
+    "desktop_configuration": "unchanged",
+    "manual_confirmation": {
+      "channel": "CGTN 英语",
+      "reported_resolution": "1920x1080",
+      "picture": true,
+      "sound": true,
+      "channel_switching": true,
+      "back_key": true
+    }
+  },
+  "known_playback_failure": {
+    "channel": "广州综合",
+    "http_status": 403,
+    "tls_error": false,
+    "bypass_attempted": false
+  },
+  "native_libraries_unchanged_from_original": [
+    {
+      "path": "lib/arm64-v8a/libffmpegJNI.so",
+      "sha256": "47247da50df2a92976cf792421c1ed63507e4197cb29c9c36d5981c1c79f2525"
+    },
+    {
+      "path": "lib/armeabi-v7a/libffmpegJNI.so",
+      "sha256": "6410d251c8f599c8c9723fad693a88430add6539b098799a90e593af9c6b7160"
+    },
+    {
+      "path": "lib/x86_64/libffmpegJNI.so",
+      "sha256": "f14cf078d1e054b4700416ddb7f69d593b515f5f7e22d2f6f114f38d3b5d6989"
+    }
+  ],
+  "limits": [
+    "Static inspection and bounded runtime verification are not an exhaustive absence-of-backdoors proof.",
+    "Native-code fuzzing and all-input analysis were not performed.",
+    "HTTP media/EPG and large-response resource exhaustion risks remain as documented.",
+    "Original installation/data retained; opening original brings back its old behavior."
+  ]
+}

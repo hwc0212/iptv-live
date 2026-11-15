@@ -1,0 +1,29 @@
+Upstream application:
+LemonIPTV / My TV, based on jia070310/lemonTV at 5be704224a2a102437811141d1ff6ec32a1dfd95.
+The original MIT copyright and license notice is retained in LICENSE-MIT.txt and the source archive.
+https://github.com/jia070310/lemonTV/tree/5be704224a2a102437811141d1ff6ec32a1dfd95
+
+Jellyfin FFmpeg decoder:
+org.jellyfin.media3:media3-ffmpeg-decoder:1.5.0+1 declares GNU GPL v3.0 in its published POM.
+GPL v3 text accompanies this distribution as LICENSE-GPL-3.0.txt.
+The native libraries are unmodified from this Maven artifact. Full runtime artifact hashes are in runtime-dependencies.json.
+Decoder source and build scripts, tag v1.5.0+1:
+https://github.com/jellyfin/jellyfin-androidx-media/tree/9bbeb8b73a05ec3f09751a6589cc87ce651585d6
+https://github.com/jellyfin/jellyfin-androidx-media/archive/9bbeb8b73a05ec3f09751a6589cc87ce651585d6.zip
+
+The decoder's source tree pins the following submodules. Fetch them with git submodule update --init --recursive, or obtain the exact source archives below and place them at the respective paths.
+ffmpeg/ (FFmpeg release/6.0):
+https://github.com/FFmpeg/FFmpeg/tree/b98349b2055a93b2a22381bc1a4c09c229f2b3cb
+https://github.com/FFmpeg/FFmpeg/archive/b98349b2055a93b2a22381bc1a4c09c229f2b3cb.zip
+media/ (AndroidX Media):
+https://github.com/androidx/media/tree/df887a942222914836081f868067960eb0149547
+https://github.com/androidx/media/archive/df887a942222914836081f868067960eb0149547.zip
+
+Other principal dependencies:
+AndroidX / Media3: Apache-2.0, https://github.com/androidx/media
+Kotlin / kotlinx: Apache-2.0, https://github.com/JetBrains/kotlin
+OkHttp / Okio: Apache-2.0, https://github.com/square/okhttp
+Guava: Apache-2.0, https://github.com/google/guava/releases/tag/v33.7.2
+Qrose: https://github.com/alexzhirkevich/qrose
+Exact resolved Maven coordinates, versions and artifact SHA-256 values accompany the app.
+Each dependency remains subject to its respective license; the application MIT notice does not replace third-party license conditions.

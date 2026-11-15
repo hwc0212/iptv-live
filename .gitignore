@@ -2,3 +2,10 @@ __pycache__/
 *.pyc
 private/
 .env
+*.jks
+*.keystore
+*.p12
+*.pfx
+key.properties
+local.properties
+signing.json

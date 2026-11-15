@@ -8,6 +8,12 @@ https://raw.githubusercontent.com/hwc0212/iptv-live/main/channels.m3u
 
 日常只编辑 [channels.m3u](channels.m3u)，保存到 main 分支，订阅地址无需更换。更新后在 LemonIPTV 菜单执行“清除缓存”，再完全退出并重新打开应用。GitHub Raw 缓存可能导致数分钟延迟；持续播放中的软件不会立即重载整个频道表。
 
+## 定制安装包
+
+[下载 LemonIPTV GitHub 定制版](https://github.com/hwc0212/iptv-live/raw/refs/heads/main/apps/LemonIPTV-GitHub-v1.1.11-hwc.1.apk) · [安装与源码说明](apps/README.md) · [安全检查记录](apps/SECURITY-REVIEW.md)
+
+此包默认订阅本仓库，使用独立包名与签名，与原版并存。已移除未鉴权网页管理／APK 上传和旧自动安装入口，恢复 HTTPS 校验，并更新受已知漏洞影响的 Guava 依赖；检查范围与剩余限制见安全记录。
+
 ## 当前内容
 
 共 96 个频道、163 条流地址：18 个央视频道（CCTV-1 至 CCTV-17，另含 CCTV-5+）、34 个省级卫视、37 个地方频道、7 个国际频道。CCTV-1、CCTV-13 排在最前；同名条目是多线路，LemonIPTV 会合并并在失败时尝试备用地址。
