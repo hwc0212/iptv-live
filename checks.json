@@ -1,396 +1,2411 @@
 {
-  "checked_at": "2026-11-15T15:52:15+08:00",
-  "scope": "HLS manifest plus bounded media-segment request; not proof of all-device or long-term availability",
-  "on_device_confirmed": [
+  "checked_at": "2026-11-15T16:29:59+08:00",
+  "scope": "Two rounds of HLS and two bounded media-segment requests, MPEG-TS video/audio program evidence and live-playlist advancement; not a long-term guarantee or manual identity verification of every channel.",
+  "channels": 96,
+  "stream_urls": 163,
+  "channel_groups": {
+    "央视频道": 18,
+    "省级卫视": 34,
+    "地方频道": 37,
+    "国际频道": 7
+  },
+  "cctv_channels": [
     "CCTV-1 综合",
     "CCTV-13 新闻",
-    "CGTN 英语",
-    "广州综合"
+    "CCTV-2 财经",
+    "CCTV-3 综艺",
+    "CCTV-4 中文国际",
+    "CCTV-5 体育",
+    "CCTV-5+ 体育赛事",
+    "CCTV-6 电影",
+    "CCTV-7 国防军事",
+    "CCTV-8 电视剧",
+    "CCTV-9 纪录",
+    "CCTV-10 科教",
+    "CCTV-11 戏曲",
+    "CCTV-12 社会与法",
+    "CCTV-14 少儿",
+    "CCTV-15 音乐",
+    "CCTV-16 奥林匹克",
+    "CCTV-17 农业农村"
   ],
-  "on_device_software_checked": [
-    "CCTV-1 综合",
-    "CCTV-13 新闻",
-    "赤峰新闻综合",
-    "广州综合",
-    "哈尔滨新闻综合"
-  ],
-  "device_validation_at": "2026-11-15T16:07:50+08:00",
-  "cctv1_cctv13_device_validation": {
-    "status": "passed",
-    "device": "Xiaomi MiTV-AZFP0 / Android 9 / LemonIPTV 1.1.11",
-    "CCTV-1 综合": {
-      "resolution": "1280x720",
-      "line": "first of four",
-      "user_confirmed": ["actual channel identity", "picture", "sound"],
-      "active_audio_track": true
+  "candidate_urls_tested": 483,
+  "manual_acceptance_history": {
+    "date": "2026-11-15",
+    "channels": [
+      "CCTV-1 综合",
+      "CCTV-13 新闻",
+      "CGTN 英语",
+      "广州综合"
+    ],
+    "cctv_details": {
+      "status": "passed",
+      "device": "Xiaomi MiTV-AZFP0 / Android 9 / LemonIPTV 1.1.11",
+      "CCTV-1 综合": {
+        "resolution": "1280x720",
+        "line": "first of four",
+        "user_confirmed": [
+          "actual channel identity",
+          "picture",
+          "sound"
+        ],
+        "active_audio_track": true
+      },
+      "CCTV-13 新闻": {
+        "resolution": "1920x1080",
+        "line": "first of four",
+        "user_confirmed": [
+          "actual channel identity",
+          "picture",
+          "sound"
+        ],
+        "active_audio_track": true
+      },
+      "limits": "Manual acceptance applies to the primary lines; backup lines were only checked using HLS and bounded media requests."
     },
-    "CCTV-13 新闻": {
-      "resolution": "1920x1080",
-      "line": "first of four",
-      "user_confirmed": ["actual channel identity", "picture", "sound"],
-      "active_audio_track": true
-    },
-    "limits": "Manual acceptance applies to the primary lines; backup lines were only checked using HLS and bounded media requests."
+    "note": "Earlier manual tests, not a claim that all newly added channels have been viewed."
   },
-  "lemon_subscription_validation": {
-    "selected_source": "https://raw.githubusercontent.com/hwc0212/iptv-live/main/channels.m3u",
-    "app_restart_preserved_selection": true,
-    "native_parser_groups": 2,
-    "native_parser_channels": 29,
-    "audio_active_after_restart": true,
-    "epg_and_user_agent_preserved": true,
-    "device_reboot_tested": false
+  "current_device_validation": {
+    "status": "pending"
   },
-  "channels": 29,
-  "stream_urls": 38,
   "sources": [
     {
       "channel": "CCTV-1 综合",
       "url": "http://74.91.26.218:82/live/cctv1hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:32+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.11
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-1 综合",
       "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv1hd",
       "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:21:32+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 4.016
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-1 综合",
       "url": "http://204.12.221.218:8181/3m1080p/cctv1.m3u8",
       "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:21:32+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.078
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-1 综合",
       "url": "http://198.204.228.26/live/cctv1hd.m3u8",
       "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:21:32+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.062
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-13 新闻",
       "url": "http://74.91.26.218:82/live/cctv13hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:32+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.125
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-13 新闻",
       "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv13hd",
       "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:21:33+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.969
-    },
-    {
-      "channel": "CCTV-13 新闻",
-      "url": "http://120.76.248.139/live/bfgd/4200000067.m3u8",
-      "origin": "DataShare-duo/IPTV-Source",
-      "hls_status": 200,
-      "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.375
-    },
-    {
-      "channel": "CCTV-13 新闻",
-      "url": "https://10.fast.hidns.vip/163189/cctv13/",
-      "origin": "DataShare-duo/IPTV-Source",
-      "hls_status": 200,
-      "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 2.703
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-2 财经",
       "url": "http://74.91.26.218:82/live/cctv2hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:38+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.078
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-2 财经",
+      "url": "http://192.151.150.154/live/cctv2hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:24:46+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-2 财经",
+      "url": "http://198.204.228.26/live/cctv2hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:24:46+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-2 财经",
+      "url": "http://204.12.221.218:8181/3m1080p/cctv2.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:24:46+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-3 综艺",
       "url": "http://74.91.26.218:82/live/cctv3hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:38+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.14
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-3 综艺",
+      "url": "http://69.30.245.50/live/cctv3.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:24:53+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-3 综艺",
+      "url": "http://107.150.60.122/live/cctv3hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:24:54+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-3 综艺",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv3hd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:24:53+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-4 中文国际",
       "url": "http://74.91.26.218:82/live/cctv4hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:45+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.125
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-4 中文国际",
+      "url": "http://107.150.60.122/live/cctv4hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:24:53+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-4 中文国际",
+      "url": "http://173.208.212.130:8181/1080p/cctv4.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:24:59+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-5 体育",
+      "url": "http://107.150.60.122/live/cctv5hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:24:59+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-5+ 体育赛事",
+      "url": "http://107.150.60.122/live//cctv5p.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:00+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-6 电影",
       "url": "http://198.204.240.250:82/live/cctv6.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:39+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 4.047
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-6 电影",
       "url": "http://69.30.245.50/live/cctv6.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:38+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.516
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-6 电影",
+      "url": "http://198.204.228.26/live/cctv6hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:06+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-6 电影",
+      "url": "http://74.91.26.218:82/live/cctv6hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:00+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-7 国防军事",
       "url": "http://74.91.26.218:82/live/cctv7hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:22:10+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.484
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-7 国防军事",
+      "url": "http://107.150.60.122/live/cctv7hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:08+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-7 国防军事",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv7hd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:08+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-8 电视剧",
       "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:57+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.343
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-8 电视剧",
+      "url": "http://69.30.245.50/live/cctv8.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:12+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-9 纪录",
       "url": "https://xykt-fix.github.io/Y77.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:28+08:00",
       "hls_status": 200,
       "segment_status": 200,
-      "media_format": "mpegts",
-      "seconds": 1.703
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-9 纪录",
+      "url": "http://192.151.150.154/live/cctv9hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:18+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-9 纪录",
+      "url": "http://74.91.26.218:82/live/cctv9hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:14+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-9 纪录",
+      "url": "http://107.150.60.122/live/cctv9hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:20+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-10 科教",
       "url": "http://74.91.26.218:82/live/cctv10hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:51+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.219
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-10 科教",
       "url": "https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:38+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.125
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-10 科教",
+      "url": "http://173.208.234.146/live/cctv10.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:20+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-11 戏曲",
       "url": "http://74.91.26.218:82/live/cctv11hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:45+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.079
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-12 社会与法",
       "url": "http://74.91.26.218:82/live/cctv12hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:57+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.14
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-12 社会与法",
+      "url": "http://107.150.60.122/live/cctv12hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:22+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-12 社会与法",
+      "url": "http://107.150.60.122/live//cctv12hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:27+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-12 社会与法",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv12hd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:28+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-14 少儿",
       "url": "http://74.91.26.218:82/live/cctv14hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:22:04+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.078
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-14 少儿",
+      "url": "http://198.204.228.26/live/cctv14hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:33+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-14 少儿",
+      "url": "http://204.12.221.218:8181/3m1080p/cctv14.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:27+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-14 少儿",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv14hd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:29+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-15 音乐",
       "url": "http://74.91.26.218:82/live/cctv15hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:22:04+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.062
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-15 音乐",
+      "url": "http://198.204.228.26/live/cctv15hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:34+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-15 音乐",
+      "url": "http://204.12.221.218:8181/3m1080p/cctv15.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:33+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-15 音乐",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv15hd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:36+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CCTV-16 奥林匹克",
+      "url": "http://107.150.60.122/live//cctv16hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:40+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "CCTV-17 农业农村",
       "url": "http://74.91.26.218:82/live/cctv17hd.m3u8",
       "origin": "Kinghuchao/tvbox-live",
+      "checked_at": "2026-11-15T16:21:51+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 3.109
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
-      "channel": "CGTN 英语",
-      "url": "https://english-livebkali.cgtn.com/live/encgtn.m3u8",
-      "origin": "iptv-org/iptv",
+      "channel": "CCTV-17 农业农村",
+      "url": "http://107.150.60.122/live//cctv17hd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:40+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.563
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
-      "channel": "赤峰新闻综合",
-      "url": "http://play1-qk.nmtv.cn/live/1735546697341033.m3u8",
-      "origin": "iptv-org/iptv",
+      "channel": "CCTV-17 农业农村",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv17hd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:42+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "江苏卫视",
+      "url": "http://8.138.7.223/tv/jsws4k.php",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:37+08:00",
       "hls_status": 200,
       "segment_status": 200,
-      "media_format": "mpegts",
-      "seconds": 0.657
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
-      "channel": "广州综合",
-      "url": "https://tencentplaybusiness.gztv.com/live/zonghes.m3u8",
-      "origin": "iptv-org/iptv",
-      "hls_status": 200,
-      "segment_status": 200,
-      "media_format": "mpegts",
-      "seconds": 0.641
-    },
-    {
-      "channel": "哈尔滨新闻综合",
-      "url": "https://stream.hrbtv.net/xwzh/playlist.m3u8",
-      "origin": "iptv-org/iptv",
+      "channel": "江苏卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/jsws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:53+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.844
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
-      "channel": "哈尔滨影视",
-      "url": "https://stream.hrbtv.net/yspd/playlist.m3u8",
-      "origin": "iptv-org/iptv",
+      "channel": "安徽卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/ahws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:26+08:00",
       "hls_status": 200,
       "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.89
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "安徽卫视",
+      "url": "http://198.204.228.26/live/ahwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:29+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "浙江卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/zjws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:46+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "浙江卫视",
+      "url": "http://107.150.60.122/live/zjwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:46+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "湖南卫视",
+      "url": "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:25:46+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        36
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "湖南卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/hnws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:01+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "北京卫视",
+      "url": "http://go.bkpcp.top/mg/bjws",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:47+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "北京卫视",
+      "url": "http://192.151.150.154/live/bjwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:10+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "东方卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/dfws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:06+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "东方卫视",
+      "url": "http://107.150.60.122/live/dfwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:02+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "广东卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/gdws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:23+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "广东卫视",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gdwshd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:23+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "三沙卫视",
+      "url": "http://192.151.150.154/live/ssws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:47+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        3,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "三沙卫视",
+      "url": "http://198.204.228.26/live/ssws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:51+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        3,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "东南卫视",
+      "url": "http://120.76.248.139/live/bfgd/4200000483.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:08+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        6,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "东南卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/dnws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:22+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "云南卫视",
+      "url": "http://120.76.248.139/live/bfgd/4200000482.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:37+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        6,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "云南卫视",
+      "url": "http://192.151.150.154/live/ynwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:47+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "兵团卫视",
+      "url": "http://107.150.60.122/live/btws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:28:03+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "兵团卫视",
+      "url": "http://192.151.150.154/live/btws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:28:03+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
     },
     {
       "channel": "内蒙古卫视",
       "url": "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8",
       "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:39+08:00",
       "hls_status": 200,
       "segment_status": 200,
-      "media_format": "mpegts",
-      "seconds": 0.25
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "内蒙古卫视",
+      "url": "http://120.76.248.139/live/bfgd/4200000110.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:28:21+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        2,
+        4
+      ],
+      "live_advanced": true
     },
     {
       "channel": "内蒙古蒙语卫视",
       "url": "http://play1-qk.nmtv.cn/live/1769652109096027.m3u8",
       "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:39+08:00",
       "hls_status": 200,
       "segment_status": 200,
-      "media_format": "mpegts",
-      "seconds": 0.328
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "吉林卫视",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=jlwshd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:45+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "吉林卫视",
+      "url": "http://107.150.60.122/live/jlwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:45+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "四川卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/scws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:36+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "四川卫视",
+      "url": "http://107.150.60.122/live/scwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:37+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "天津卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/tjws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:27+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "天津卫视",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=tjwshd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:26+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "山东卫视",
+      "url": "http://198.204.228.26/live/sdwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:16+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "山东卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/sdws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:19+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "山西卫视",
+      "url": "http://119.39.9.8:9901/tsfile/live/0118_1.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:42+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "山西卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/sxws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:53+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "广西卫视",
+      "url": "http://198.204.228.26/live/gxwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:36+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "广西卫视",
+      "url": "http://107.150.60.122/live/gxwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:34+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "新疆卫视",
+      "url": "http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:28:01+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "新疆卫视",
+      "url": "http://198.204.228.26/live/xjws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:28:16+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "江西卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/jxws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:55+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "江西卫视",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=jxwshd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:55+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "河北卫视",
+      "url": "https://event.pull.hebtv.com/live/live101.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:26+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "河北卫视",
+      "url": "https://restream.pdtvhd.com/memfs/1db8c005-9365-4b32-94a4-3736987b5646.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:09+08:00",
+      "hls_status": 200,
+      "segment_status": 200,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "河南卫视",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hawshd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:41+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "河南卫视",
+      "url": "http://107.150.60.122/live/hawshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:41+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "海南卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/lyws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:28:05+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "深圳卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/szws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:01+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "深圳卫视",
+      "url": "http://107.150.60.122/live/szwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:59+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "湖北卫视",
+      "url": "http://120.76.248.139/live/bfgd/4200000102.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:26:52+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        6,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "湖北卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/hbws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:07+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "甘肃卫视",
+      "url": "http://120.76.248.139/live/bfgd/4200000119.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:57+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        6,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "甘肃卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/gsws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:28:09+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "西藏卫视",
+      "url": "http://120.76.248.139/live/bfgd/4200000121.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:28:11+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        6,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "西藏卫视",
+      "url": "https://pili-live-hls-zdzz-tv.zzxwcm.cn/zdzz-tv/nqzh.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:02+08:00",
+      "hls_status": 200,
+      "segment_status": 200,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "贵州卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/gzws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:40+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "贵州卫视",
+      "url": "http://192.151.150.154/live/gzwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:44+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "辽宁卫视",
+      "url": "http://198.204.228.26/live/lnwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:13+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "辽宁卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/lnws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:08+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "重庆卫视",
+      "url": "http://204.12.221.218:8181/3m1080p/cqws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:15+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "重庆卫视",
+      "url": "http://107.150.60.122/live/cqwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:19+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "陕西卫视",
+      "url": "http://192.151.150.154/live/snwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:57+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "陕西卫视",
+      "url": "http://107.150.60.122/live/snwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:59+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "青海卫视",
+      "url": "http://120.76.248.139/live/bfgd/4200000111.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:28:21+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        27,
+        129
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "青海卫视",
+      "url": "http://107.150.60.122/live/qhws.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:28:24+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "黑龙江卫视",
+      "url": "http://107.150.60.122/live/hljwshd.m3u8",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:30+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "黑龙江卫视",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hljwshd",
+      "origin": "DataShare-duo/IPTV-Source",
+      "checked_at": "2026-11-15T16:27:34+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "Ando TV",
+      "url": "http://play.kankanlive.com/live/1711956137852982.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:25:03+08:00",
+      "hls_status": 200,
+      "segment_status": 200,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CND Film Middle School Channel",
+      "url": "http://live-play.zxstv.com.cn/zhongxuesheng/zhongxuesheng.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:58+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "Xinjiang TV 3",
+      "url": "https://st-video.xjmty.com/fs/livedit/e55abfa37af26e19/8ce9971c2177b3dd.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:01+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "上虞1新闻综合",
+      "url": "https://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:02+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "上虞3新商都",
+      "url": "https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:02+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "上虞经济文化",
+      "url": "https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:03+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "东莞新闻综合",
+      "url": "https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:58+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "兰州文旅",
+      "url": "https://liveplus.lzr.com.cn/wlpd/HD/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:00+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "兰州新闻综合",
+      "url": "https://liveplus.lzr.com.cn/xwzh/HD/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:00+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "农安新闻综合",
+      "url": "https://stream2.jlntv.cn/naxw/sd/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:04+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "前郭综合",
+      "url": "https://stream2.jlntv.cn/qg/sd/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:05+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "吉林市新闻综合",
+      "url": "https://stream2.jlntv.cn/jilin1/sd/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:06+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "哈尔滨影视",
+      "url": "https://stream.hrbtv.net/yspd/playlist.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:39+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "哈尔滨新闻综合",
+      "url": "https://stream.hrbtv.net/xwzh/playlist.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:37+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "四平新闻综合",
+      "url": "https://stream2.jlntv.cn/sptv/sd/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:05+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "宜昌三峡文旅生活",
+      "url": "https://liveplay.ycrmt.cn/sxgd/lysh.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:10+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "宜昌三峡综合",
+      "url": "https://liveplay.ycrmt.cn/sxgd/zhpd.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:10+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "嵊州综合",
+      "url": "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:05+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "广州综合",
+      "url": "https://tencentplaybusiness.gztv.com/live/zonghes.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:35+08:00",
+      "hls_status": 200,
+      "segment_status": 200,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "松原新闻综合",
+      "url": "https://stream2.jlntv.cn/sytv/sd/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:07+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "楚雄新闻综合",
+      "url": "http://hwapi.yntv.net/ew265l/848y54.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:11+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "武进新闻",
+      "url": "https://live.wjyanghu.com/live/CH1.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:07+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "江苏公共新闻",
+      "url": "https://jiangning-tv-playing-t.cm.jstv.com/jiangning-tv/jnxwzh.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:59+08:00",
+      "hls_status": 200,
+      "segment_status": 200,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "湖南经视",
+      "url": "https://p8.vzan.com/slowlive/415983998730568937/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:59+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "白城新闻综合",
+      "url": "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:09+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "白山新闻综合",
+      "url": "https://stream2.jlntv.cn/baishan1/sd/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:09+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "福州电视台少儿频道",
+      "url": "http://live.zohi.tv/video/s10001-fztv-4/index.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:09+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "绍兴影视",
+      "url": "http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:08+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "绍兴综合",
+      "url": "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:08+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "萧山新闻综合",
+      "url": "https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:09+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "萧山生活频道",
+      "url": "https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:09+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "西藏藏语",
+      "url": "https://live.vtibet.cn/live/ZYWS20261016.stream.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:02+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "赤峰新闻综合",
+      "url": "http://play1-qk.nmtv.cn/live/1735546697341033.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:34+08:00",
+      "hls_status": 200,
+      "segment_status": 200,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "通化新闻",
+      "url": "https://stream2.jlntv.cn/tonghua1/sd/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:10+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "长春综合",
+      "url": "https://stream2.jlntv.cn/jlcc/sd/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:10+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "集安综合",
+      "url": "https://stream2.jlntv.cn/ja/sd/live.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:11+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "靖江新闻综合",
+      "url": "http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:10+08:00",
+      "hls_status": 200,
+      "segment_status": 200,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        21,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CGTN 全球财经",
+      "url": "https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2ac599/index.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:59+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CGTN 纪录",
+      "url": "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:57+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CGTN 英语",
+      "url": "https://english-livebkali.cgtn.com/live/encgtn.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:33+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "CGTN 英语",
+      "url": "https://0472.org/hls/cgtn.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:52+08:00",
+      "hls_status": 200,
+      "segment_status": 200,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "China Travel",
+      "url": "https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287fc/index.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:59+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "Discovering China",
+      "url": "https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:01+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "VOA美国之音",
+      "url": "https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:22:09+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    },
+    {
+      "channel": "面包台",
+      "url": "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8",
+      "origin": "iptv-org/iptv",
+      "checked_at": "2026-11-15T16:21:50+08:00",
+      "hls_status": 200,
+      "segment_status": 206,
+      "two_media_segments": true,
+      "ts_stream_types": [
+        15,
+        27
+      ],
+      "live_advanced": true
+    }
+  ],
+  "removed_previous_streams": [
+    {
+      "channel": "CCTV-13 新闻",
+      "url": "http://120.76.248.139/live/bfgd/4200000067.m3u8",
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "channel": "CCTV-13 新闻",
+      "url": "https://10.fast.hidns.vip/163189/cctv13/",
+      "reason": "live_playlist_not_advancing_on_recheck"
     },
     {
       "channel": "浙江国际",
       "url": "https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8",
-      "origin": "iptv-org/iptv",
-      "hls_status": 200,
-      "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.328
+      "reason": "live_playlist_not_advancing_on_recheck"
     },
     {
       "channel": "之江纪录",
       "url": "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8",
-      "origin": "iptv-org/iptv",
-      "hls_status": 200,
-      "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.296
+      "reason": "live_playlist_not_advancing_on_recheck"
     },
     {
       "channel": "浙江国际",
       "url": "https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8",
-      "origin": "iptv-org/iptv",
-      "hls_status": 200,
-      "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.171
+      "reason": "live_playlist_not_advancing_on_recheck"
     },
     {
       "channel": "浙江教科",
       "url": "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
-      "origin": "iptv-org/iptv",
-      "hls_status": 200,
-      "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.203
+      "reason": "live_playlist_not_advancing_on_recheck"
     },
     {
       "channel": "浙江新闻",
       "url": "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8",
-      "origin": "iptv-org/iptv",
-      "hls_status": 200,
-      "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.157
+      "reason": "live_playlist_not_advancing_on_recheck"
     },
     {
       "channel": "浙江民生",
       "url": "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8",
-      "origin": "iptv-org/iptv",
-      "hls_status": 200,
-      "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.219
+      "reason": "live_playlist_not_advancing_on_recheck"
     },
     {
       "channel": "浙江经济",
       "url": "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
-      "origin": "iptv-org/iptv",
-      "hls_status": 200,
-      "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.157
+      "reason": "live_playlist_not_advancing_on_recheck"
     },
     {
       "channel": "浙江钱江",
       "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8",
-      "origin": "iptv-org/iptv",
-      "hls_status": 200,
-      "segment_status": 206,
-      "media_format": "mpegts",
-      "seconds": 0.172
+      "reason": "live_playlist_not_advancing_on_recheck"
     }
   ],
-  "excluded": [
-    {
-      "channel": "CCTV-8",
-      "reason": "URL names CCTV8K, inconsistent channel identity"
-    }
+  "excluded_mislabelled": [
+    "CCTV-8-labelled URLs naming cctv8k"
   ]
 }
