@@ -66,7 +66,230 @@
     "note": "Earlier manual tests, not a claim that all newly added channels have been viewed."
   },
   "current_device_validation": {
-    "status": "pending"
+    "checked_at": "2026-11-15T16:55:31+08:00",
+    "device": "Xiaomi MiTV-AZFP0 / Android 9 / LemonIPTV 1.1.11",
+    "status": "23 channel selections, player-reported video dimensions and active audio tracks checked",
+    "cctv_channels_checked": 18,
+    "other_samples_checked": 5,
+    "source_url_persisted": "https://raw.githubusercontent.com/hwc0212/iptv-live/main/channels.m3u",
+    "native_parsed_groups": 4,
+    "native_parsed_channels": 96,
+    "epg_and_user_agent_preserved": true,
+    "cctv_tv_app_and_home_preserved": true,
+    "samples": [
+      {
+        "channel": "CCTV-1 综合",
+        "channel_number": 1,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-13 新闻",
+        "channel_number": 2,
+        "reported_resolution": "1920x1080",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-2 财经",
+        "channel_number": 3,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-3 综艺",
+        "channel_number": 4,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-4 中文国际",
+        "channel_number": 5,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-5 体育",
+        "channel_number": 6,
+        "reported_resolution": "1920x1080",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-5+ 体育赛事",
+        "channel_number": 7,
+        "reported_resolution": "1920x1080",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-6 电影",
+        "channel_number": 8,
+        "reported_resolution": "1280x720",
+        "observed_line": 4,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-7 国防军事",
+        "channel_number": 9,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-8 电视剧",
+        "channel_number": 10,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-9 纪录",
+        "channel_number": 11,
+        "reported_resolution": "1280x720",
+        "observed_line": 3,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-10 科教",
+        "channel_number": 12,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-11 戏曲",
+        "channel_number": 13,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-12 社会与法",
+        "channel_number": 14,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-14 少儿",
+        "channel_number": 15,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-15 音乐",
+        "channel_number": 16,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-16 奥林匹克",
+        "channel_number": 17,
+        "reported_resolution": "1920x1080",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "CCTV-17 农业农村",
+        "channel_number": 18,
+        "reported_resolution": "1920x1080",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "江苏卫视",
+        "channel_number": 19,
+        "reported_resolution": "1920x1080",
+        "observed_line": 2,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "安徽卫视",
+        "channel_number": 20,
+        "reported_resolution": "1920x1080",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "浙江卫视",
+        "channel_number": 21,
+        "reported_resolution": "1920x1080",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "广州综合",
+        "channel_number": 71,
+        "reported_resolution": "1280x720",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      },
+      {
+        "channel": "江苏公共新闻",
+        "channel_number": 75,
+        "reported_resolution": "720x480",
+        "observed_line": 1,
+        "active_audio_track": true,
+        "player_channel_and_resolution_visually_checked": true
+      }
+    ],
+    "limits": [
+      "Per-channel decoder frame counters were not available; video dimensions and audio-track state are distinct from a manual picture/content check.",
+      "Not every backup line or channel was manually viewed; no long-duration stability test.",
+      "Lemon may select a remembered playable host, so the sampled line is not necessarily the first listed line."
+    ],
+    "manual_acceptance": {
+      "CCTV-5 体育": {
+        "date": "2026-11-15",
+        "channel_identity_confirmed": true,
+        "picture_confirmed": true,
+        "sound_confirmed": true,
+        "reported_resolution": "1920x1080"
+      },
+      "CCTV-5+ 体育赛事": {
+        "date": "2026-11-15",
+        "channel_identity_confirmed": true,
+        "picture_confirmed": true,
+        "sound_confirmed": true,
+        "reported_resolution": "1920x1080"
+      },
+      "CCTV-16 奥林匹克": {
+        "date": "2026-11-15",
+        "channel_identity_confirmed": true,
+        "picture_confirmed": true,
+        "sound_confirmed": true,
+        "reported_resolution": "1920x1080"
+      }
+    }
   },
   "sources": [
     {
