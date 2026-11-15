@@ -2,15 +2,45 @@
   "checked_at": "2026-11-15T15:52:15+08:00",
   "scope": "HLS manifest plus bounded media-segment request; not proof of all-device or long-term availability",
   "on_device_confirmed": [
+    "CCTV-1 综合",
+    "CCTV-13 新闻",
     "CGTN 英语",
     "广州综合"
   ],
   "on_device_software_checked": [
+    "CCTV-1 综合",
+    "CCTV-13 新闻",
     "赤峰新闻综合",
     "广州综合",
     "哈尔滨新闻综合"
   ],
-  "cctv1_cctv13_device_validation": "pending",
+  "device_validation_at": "2026-11-15T16:07:50+08:00",
+  "cctv1_cctv13_device_validation": {
+    "status": "passed",
+    "device": "Xiaomi MiTV-AZFP0 / Android 9 / LemonIPTV 1.1.11",
+    "CCTV-1 综合": {
+      "resolution": "1280x720",
+      "line": "first of four",
+      "user_confirmed": ["actual channel identity", "picture", "sound"],
+      "active_audio_track": true
+    },
+    "CCTV-13 新闻": {
+      "resolution": "1920x1080",
+      "line": "first of four",
+      "user_confirmed": ["actual channel identity", "picture", "sound"],
+      "active_audio_track": true
+    },
+    "limits": "Manual acceptance applies to the primary lines; backup lines were only checked using HLS and bounded media requests."
+  },
+  "lemon_subscription_validation": {
+    "selected_source": "https://raw.githubusercontent.com/hwc0212/iptv-live/main/channels.m3u",
+    "app_restart_preserved_selection": true,
+    "native_parser_groups": 2,
+    "native_parser_channels": 29,
+    "audio_active_after_restart": true,
+    "epg_and_user_agent_preserved": true,
+    "device_reboot_tested": false
+  },
   "channels": 29,
   "stream_urls": 38,
   "sources": [
